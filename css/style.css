@@ -17,30 +17,35 @@
   display: flex; }
   .navbar-ul .navbar-list {
     margin: 0 10px;
-    padding: 8px;
-    position: relative; }
-    .navbar-ul .navbar-list:hover {
-      background-color: rgba(180, 178, 178, 0.2); }
+    padding: 18px 0; }
     .navbar-ul .navbar-list .navbar-link {
       text-decoration: none;
       color: black;
-      font-size: 20px; }
+      font-size: 20px;
+      padding: 7px; }
+      .navbar-ul .navbar-list .navbar-link:hover {
+        background-color: rgba(180, 178, 178, 0.2); }
+
+.dropdown-menu {
+  position: relative;
+  top: 50%; }
 
 .dropdown-ul {
   display: none;
   position: absolute;
-  left: -40px;
-  width: 150px;
+  transform: translate(-50%, 0);
+  left: 50%;
+  width: max-content;
   border: 1px solid #c5c4c4;
   border-radius: 5px;
-  margin: 20px 0 0 10px;
+  margin: 18px 0 0 10px;
   background-color: #e8e7e7;
   list-style: none;
   line-height: 1.5; }
   .dropdown-ul .dropdown-link {
     text-decoration: none;
-    display: inline-block;
-    width: 100%;
+    position: relative;
+    display: block;
     color: black;
     padding: 8px; }
     .dropdown-ul .dropdown-link:hover {
@@ -53,6 +58,7 @@
   width: 0;
   position: absolute;
   bottom: 100%;
+  text-align: center;
   border: solid transparent; }
 
 .parent-ul:after {
@@ -74,31 +80,36 @@
 
 .child-ul:after {
   border-bottom-color: #e8e7e7;
-  border-width: 7px;
+  border-width: 10px;
   top: 50%;
-  left: -12px;
+  left: -19px;
   margin-top: -6px;
   transform: rotate(-92deg); }
 
 .child-ul:before {
   border-bottom-color: #ddd;
-  border-width: 8px;
+  border-width: 11px;
   top: 50%;
-  left: -15px;
+  left: -22px;
   margin-top: -8px;
   transform: rotate(-92deg); }
 
 .dropdown-position {
   position: relative; }
   .dropdown-position .dropdown-ul {
-    width: 75%;
-    left: 100%;
-    top: -40px; }
+    width: 80%;
+    left: 142%;
+    bottom: -50%; }
 
 .dropdown-menu:hover > .dropdown-ul {
   display: block; }
 
 .icon {
   font-size: 10px; }
+
+.align-icon {
+  position: absolute;
+  right: 0;
+  top: 35%; }
 
 /*# sourceMappingURL=style.css.map */
