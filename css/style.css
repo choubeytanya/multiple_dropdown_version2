@@ -74,7 +74,7 @@
 
 .child-ul:after {
   border-bottom-color: #e8e7e7;
-  border-width: 6px;
+  border-width: 7px;
   top: 50%;
   left: -12px;
   margin-top: -6px;
@@ -82,7 +82,7 @@
 
 .child-ul:before {
   border-bottom-color: #ddd;
-  border-width: 7px;
+  border-width: 8px;
   top: 50%;
   left: -15px;
   margin-top: -8px;
